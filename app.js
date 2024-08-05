@@ -22,4 +22,8 @@ const three = (ctx, next) => {
 app.use(one)
 app.use(two)
 app.use(three)
+app.use((ctx, next) => {
+  console.log(ctx)
+})
+
 app.listen(3000)
